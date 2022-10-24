@@ -2,13 +2,15 @@
 <html>
 <head>
 
+<!--<base href="www/html/MIDDLEWARE-website/2023/"></base>-->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 <meta name="description" content="MIDDLEWARE 2023">
 <meta name="author" content="Giuseppe">
 
-<link rel="icon" href="./img/favicon.ico">
+<link rel="icon" href="/img/favicon.ico">
 
 
 <title>Middleware 2023</title>
@@ -16,30 +18,30 @@
 <meta name="generator" content="Hugo 0.86.0" />
 
 
-    <link rel="stylesheet" href="./css/owl.carousel.css" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./css/ionicons.min.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
-    <link rel="stylesheet" href="./css/syntax.css" />
-    <link rel="stylesheet" href="./css/venobox.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/ionicons.min.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <link rel="stylesheet" href="/css/venobox.css" />
 <!-- Main Stylesheet -->
 
-<link rel="stylesheet" href="./css/style.min.css" integrity="" media="screen">
+<link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
 
 
 
-<script src="./js/jquery-1.10.2.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/owl.carousel.min.js"></script>
-<script src="./js/plugins.js"></script>
-<script src="./js/venobox.min.js"></script>
-<script src="./js/w3-include-html.js"></script>
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/venobox.min.js"></script>
+<script src="/js/w3-include-html.js"></script>
 
 
 <!-- Main Script -->
 
-<script src="./js/main.min.js"></script>
+<script src="/js/main.min.js"></script>
 
 <!-- google analitycs -->
 <script>
@@ -55,87 +57,9 @@
 
 
 </head>
-<body>
+<body onLoad = includeHTML()>
 
-	
-<header class="navbar-sticky-top">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="./">
-                <img src="./img/middleware-logo.png" alt="Middleware 2023 Logo">
-              </a>
-            </div>
-
-
-            
-            <div class="collapse navbar-collapse" id="navigation">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="./">HOME</a></li>
-                
-                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">CALLS <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    
-                    <li><a class="text-left" href="./call-for-research-papers/">Call for Research Papers</a></li>
-                    
-                    
-                  </ul>
-                </li>
-                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">COMMITTEE <span class="caret"></span></a>
-                  
-                </li>
-                
-                
-                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONFERENCE INFO <span class="caret"></span></a>
-                  
-                </li>
-                
-                
-                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROGRAM <span class="caret"></span></a>
-                  
-                </li>
-                
-                
-                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">REGISTRATION <span class="caret"></span></a>
-                  
-                </li>
-                
-                <li><a href="#">SPONSORSHIP</a></li>
-
-              </ul>
-              
-              <ul class="list-inline lang-list">
-                
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-
+<div w3-include-html="/fixed-templates/navbar.html"></div>
 
 	
 <!-- Slider Start -->
@@ -184,6 +108,7 @@ $(document).ready(function(){
   });
 });
 </script>
+
 <section id="intro" style="margin-bottom:0px;">
   <div class="container">
     <div class="row">
@@ -274,77 +199,17 @@ $(document).ready(function(){
 
 
      <div class="col-md-3 col-sm-12">
+	<div w3-include-html="/fixed-templates/right-panel.html"></div>
+     </div>
 
-	<div w3-include-html="./right-panel/timeline.html"></div>
-	<!--<div w3-include-html="./right-panel/twitter.html"></div>-->
-	<div class="twitter">
-    <a class="twitter-timeline" href="https://twitter.com/middleware22?lang=en" data-height="250" data-chrome="nofooter" data-link-color="#55acee" data-border-color="#DCDCDC">A Twitter List by TwitterDev</a>
-    <script async="true" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    </div>
-    
-    <script>
-       includeHTML();
-    </script>
     
 </section>
 
 
+<!--
+<div w3-include-html="./fixed-templates/sponsors.html"></div>
+<div w3-include-html="./fixed-templates/footer.html"></div>
+-->
 	
-<section id="clients-logo-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <div class="section-title">
-            <h2>SPONSORS</h2>
-          </div>
-          <div style="display:flex; justify-content: space-between;">
-            
-
-              <a><img src="/2023/img/sponsors/sponsor-logo1.png" alt="Features" style="width:90%"></a>
-            
-              <a><img src="/2023/img/sponsors/sponsor-logo18.png" alt="Features" style="width:90%"></a>
-
-          </div>
-          <div>
-            <h3 align="justify">The Middleware conference adheres strictly to the <a href="https://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment" target = _blank>ACM policies against discrimination and harassment</a>.</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-	
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          <ul>
-            
-          </ul>
-        </div>
-        <div class="footer-manu">
-          <ul class="list-inline mb-20">
-            <li class="list-inline-item">Follow us:</li>
-            
-            <li class="list-inline-item"><a href="https://twitter.com/middleware22" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            
-            <li class="list-inline-item"><a href="https://www.facebook.com/ACM-Middleware-2023-100319065779053/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            
-            <li class="list-inline-item"><a href="https://www.linkedin.com/groups/9093569/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            
-          </ul>
-          <p><center>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved | ÉTS</center></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
 </body>
 </html>
